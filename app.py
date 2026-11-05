@@ -20,6 +20,7 @@ def criar_app():
     origens_permitidas = {
         "http://127.0.0.1:5500",
         "http://localhost:5500",
+        resposta.headers["Access-Control-Allow-Origin"] = "http://127.0.0.1:5500"
     }
 
     url_frontend = os.getenv("FRONTEND_URL", "").rstrip("/")
