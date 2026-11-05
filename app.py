@@ -1,8 +1,5 @@
-
 import os
-
 from flask import Flask, jsonify, request
-
 from modulos.livros.apresentacao.rotas import rotas_livros
 from modulos.carrinho.apresentacao.rotas import rotas_carrinho
 from modulos.favoritos.apresentacao.rotas import rotas_favoritos
